@@ -1,0 +1,102 @@
+.Header{
+    width:100%;
+    height:auto;
+    background-color: white;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding-left: 40px;
+    padding-right: 40px;
+    padding: 5px;
+    font-size: 24px;
+
+    position: relative;
+    z-index: 5;
+}
+
+.HeaderLogo{
+    width: 8%;
+    height: auto;
+    /* margin-right: 110px; */
+}
+
+.HeaderLinks{
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    
+}
+
+.HeaderLink{
+    margin: 30px;
+}
+
+.HeaderButton{
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #810020;
+    border-radius: 24px;
+    border: 2px solid black;
+    color: white;
+}
+
+.HeaderLinksHamburger {
+    display: none; 
+}
+
+@media screen and (max-width: 850px){
+    .HeaderButton {
+        display: none; 
+    }
+
+    .HeaderLinks {
+        display: none; /* initially hide the links */
+        position: absolute;
+        top: 100%; /* position it just below the header */
+        left: 0;
+        background-color: #a7a7a7;
+        width: 100%;
+        /* padding: 10px; */
+        flex-direction: column; /* align links vertically */
+        z-index: 2; /* ensure it appears above other content */
+    }
+
+    .HeaderLinks.open{
+        display: flex;
+    }
+
+    .HeaderLinks.closed {
+        display: none; /* Change display to none when closed */
+    }
+
+    .HeaderLinksHamburger {
+        display: flex;
+        width: 3%;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .HeaderLinksHamburger {
+        display: flex; 
+        width: 3%;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .HeaderLink{
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin: 0px;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .HeaderLink:hover{
+        background-color: #d6d6d6;
+    }
+}
