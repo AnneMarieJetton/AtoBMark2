@@ -1,5 +1,5 @@
 function loadHQHomepageForm() {
-    fetch('../../HTML/Components/HQ/HQHomepageForm.html')
+    fetch('/HTML/Components/HQ/HQHomepageForm.html')
         .then(response => response.text())
         .then(data => {
             document.body.insertAdjacentHTML('afterbegin', data);

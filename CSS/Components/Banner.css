@@ -1,0 +1,52 @@
+.Banner {
+    width: 100%;      /* Takes up the full width of the screen */
+    /* height: 200px; */
+    padding-top: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
+    background-color: #6d0000; /* Optional: Adds a background color for visibility */
+    background-image: url('/Assets/AtoBCar1.jpg');
+    background-size: cover; /* Scales the image to cover the entire element */
+    background-position: center; /* Centers the image within the element */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    box-sizing: border-box;
+}
+
+.car-rental-public-booking {
+    padding: 0px;
+}
+
+.HomeBookingWidgetTitle{
+    font-size: 50px;
+    /* font-size: 5vw; */
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.HomeBookingWidgetTitle2{
+    font-size: 24px;
+    /* font-size: 2vw; */
+    /* font-weight: bold; */
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.788);
+
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 750px){
+
+    .HomeBookingWidgetTitle{
+        font-size: 5vw;
+    }
+    
+    .HomeBookingWidgetTitle2{
+        font-size: 2vw;
+    }
+}

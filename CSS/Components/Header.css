@@ -13,6 +13,7 @@
 
     position: relative;
     z-index: 5;
+    box-sizing: border-box;
 }
 
 .HeaderLogo{
@@ -30,6 +31,8 @@
 
 .HeaderLink{
     margin: 30px;
+    color: black;          /* Sets the text color of links to black */
+    text-decoration: none; /* Removes the underline from links */
 }
 
 .HeaderButton{

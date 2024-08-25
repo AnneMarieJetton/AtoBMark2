@@ -1,5 +1,5 @@
 function loadHeader() {
-    fetch('../../HTML/Components/Header.html')
+    fetch('/HTML/Components/Header.html')
         .then(response => response.text())
         .then(data => {
             document.body.insertAdjacentHTML('afterbegin', data);

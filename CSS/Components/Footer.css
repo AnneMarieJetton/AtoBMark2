@@ -1,0 +1,101 @@
+.Footer{
+    width:100%;
+    height:auto;
+    background-color: #818181;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px; 
+    padding-left: 40px;
+    padding-right: 40px;
+
+    font-size: 1.25vw;
+    box-sizing: border-box;
+}
+
+.FooterImageContainer{
+    width: 20%;
+    height: auto;
+}
+
+.FooterImageContainer2{
+    width: 20%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.FooterImageContainer3{
+    width: 30px;
+    /* width: 5%; */
+    height: auto;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.FooterInfoCol{
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterInfoCol2{
+    display: flex;
+    flex-direction: column;
+}
+
+.FooterInfoColLine{
+    display: flex;
+    flex-direction: row; /* Change direction to row */
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center; /* Center items vertically */
+}
+
+.FooterInfoColLine span{
+    padding-left: 10px;
+}
+
+.FooterInfoColLine span a{
+    text-decoration: underline;
+    color: black;          /* Sets the text color of links to black */
+    /* text-decoration: none; */
+}
+
+.FooterInfoColTitle{
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px){
+    .Footer{
+        flex-direction: column;
+        padding: 0px;
+        padding-bottom: 30px;
+
+        font-size: 4vw;
+    }
+
+    .FooterImageContainer{
+        display: none;
+    }
+
+    .FooterImageContainer2{
+        width: 70%;
+        height: auto;
+    }
+
+    .FooterInfoCol{
+        margin-top: 40px;
+    }
+
+    .FooterInfoCol2{
+        margin-top: 40px;
+    }
+
+    .FooterInfoColTitle{
+        margin-bottom: 10px;
+    }
+
+
+
+}
